@@ -1,6 +1,7 @@
-# 2. Udacity Project
+# [2. Udacity Project](https://raideer.github.io/udacity-project-2/)
 Udacity Full stack Web developer nanodegree
 ### Build a Portfolio site
+_[Preview](https://raideer.github.io/udacity-project-2/)_
 
 ## Stuff I used
 
