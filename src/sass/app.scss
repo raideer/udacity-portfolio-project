@@ -1,0 +1,221 @@
+@import "fonts";
+
+$colorPrimary: #02b3e4;
+$colorDefault: #7d97ad;
+$colorDark: #2d3c49;
+
+$avatarSize: 60px;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+
+header {
+    padding: 1.5em;
+    font-weight: 300;
+    color: $colorDefault;
+}
+
+footer {
+    background-color: $colorDark;
+    color: $colorDefault;
+    margin-top: 50px;
+    padding: 20px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    .outro {
+        .nanodegree {
+            display: inline-block;
+            margin-left: 20px;
+
+            a {
+                font-weight: 300;
+                color: inherit;
+                text-decoration: none;
+
+                &:hover {
+                    color: $colorPrimary;
+                }
+            }
+        }
+    }
+}
+
+#me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1em;
+    text-align: right;
+}
+
+#featured-work {
+    justify-content: center;
+    text-align: center;
+}
+
+.avatar {
+    width: $avatarSize;
+    height: $avatarSize;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.typed {
+    color: $colorDark;
+    min-height: 1.2em; //To stop the element from collapsing, when typed erases the content
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    text-align: center;
+    margin-bottom: 20px;
+
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-weight: 700;
+        padding: 10px 0;
+        color: #2d3c49;
+    }
+
+    .description {
+        font-weight: 300;
+    }
+
+    .links {
+        margin-top: 10px;
+        font-size: 1.4em;
+
+        a {
+            padding: 5px;
+            color: $colorDefault;
+        }
+    }
+}
+
+.links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.4s;
+
+    &:hover {
+        color: $colorPrimary;
+    }
+}
+
+.background-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/macbook-large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $colorPrimary;
+    font-size: 2em;
+    font-weight: 700;
+
+    span {
+        background-color: $colorDark;
+        padding: 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    header, #me {
+        text-align: center;
+    }
+
+    #me {
+        margin-top: 20px;
+
+        .typed {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .background-image {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 36em) {
+    .card {
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .container {
+        width: 35.5em;
+    }
+
+    .background-image {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .container {
+        width: 48em;
+    }
+
+    .background-image {
+        height: 400px;
+    }
+
+    .card {
+        width: 33.3333%
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .container {
+        width: 64em;
+    }
+}
