@@ -93,7 +93,8 @@ footer {
 
 .typed {
     color: $colorDark;
-    min-height: 1.2em; //To stop the element from collapsing, when typed erases the content
+    min-height: 1.3em; //To stop the element from collapsing, when typed erases the content
+    display: block;
 }
 
 .card {
