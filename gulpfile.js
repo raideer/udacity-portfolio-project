@@ -28,9 +28,8 @@ elixir(function(mix){
 var cardSizes = {
     small: 300,
     medium: 500,
-    large: 800
+    large: 700
 };
-
 
 gulp.task('images', function(){
     gulp.src('./src/images/**/*.{png,jpg}')

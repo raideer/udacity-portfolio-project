@@ -59,15 +59,19 @@ footer {
     }
 }
 
-#me {
+.me {
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 1.1em;
     text-align: right;
+
+    .name {
+        font-weight: 300;
+    }
 }
 
-#featured-work {
+.featured-work {
     justify-content: center;
     text-align: center;
 }
@@ -109,7 +113,7 @@ footer {
     width: 100%;
 
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -165,11 +169,11 @@ footer {
 }
 
 @media screen and (max-width: 48em) {
-    header, #me {
+    header, .me {
         text-align: center;
     }
 
-    #me {
+    .me {
         margin-top: 20px;
 
         .typed {

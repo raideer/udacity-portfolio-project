@@ -94,7 +94,7 @@ footer .outro .nanodegree a:hover {
   color: #02b3e4;
 }
 
-#me {
+.me {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -106,7 +106,11 @@ footer .outro .nanodegree a:hover {
   text-align: right;
 }
 
-#featured-work {
+.me .name {
+  font-weight: 300;
+}
+
+.featured-work {
   -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
@@ -151,7 +155,7 @@ footer .outro .nanodegree a:hover {
 }
 
 .card img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -209,13 +213,13 @@ footer .outro .nanodegree a:hover {
 }
 
 @media screen and (max-width: 48em) {
-  header, #me {
+  header, .me {
     text-align: center;
   }
-  #me {
+  .me {
     margin-top: 20px;
   }
-  #me .typed {
+  .me .typed {
     margin-top: 10px;
   }
 }
